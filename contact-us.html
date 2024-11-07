@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(253, 248, 250);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .contact-container {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact-container h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .contact-container p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .contact-container label {
+            font-size: 14px;
+            color: #333;
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-container input[type="text"],
+        .contact-container input[type="email"],
+        .contact-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .contact-container textarea {
+            height: 100px;
+        }
+
+        /* Button styling */
+        .contact-container button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #ff4d8e;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .contact-container button:hover {
+            background-color: rgba(243, 62, 116, 0.892);
+        }
+    </style>
+</head>
+<body>
+
+<div class="contact-container">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us.</p>
+    
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com">
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Title">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Type here..."></textarea>
+
+        <button type="submit">Send Now</button>
+    </form>
+</div>
+
+</body>
+</html>
